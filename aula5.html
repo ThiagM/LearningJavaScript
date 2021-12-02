@@ -1,0 +1,68 @@
+<html>
+    <body>
+        <script>
+            //Sem passar Parametro
+            function testes(){
+                //O que vai ser executado quando chamar a function
+                console.log('Hello World Function!');
+            };
+
+            testes();  
+
+            //Passando Parametro
+            function testes2(cor){
+                console.log('Sua casa é da cor '+cor);
+            }
+            testes2('Verde');
+            testes2('Roxo');
+
+            function testes3(nome,idade,cpf){
+                console.log('Seu nome é '+nome);
+                console.log('Você tem '+idade);
+                console.log('O seu cpf é '+cpf);
+            }
+            testes3('Thiago','19','109.747.466-65');
+
+            //Criando uma função que retorna um nome
+            function nome(){
+                return 'Thiago';
+
+                //Não vai Funcionar, pois o Return Termina a Função
+                console.log('Thiago');
+            }
+            //Variavel vai ser a função
+            var nomes = nome();
+            //Printando a Variavel
+            console.log(nomes);
+            //Thiago
+
+            function brincandoJs(parametro){
+                if(parametro == 1){
+                    return 'Seu número é 1';
+                }else{
+                    return 'Não faço ideia de qual seu número';
+                }
+            }
+
+            var numero = brincandoJs(1);
+            console.log(numero);
+
+            var numero = brincandoJs(10);
+            console.log(numero);
+
+
+            //Outro jeito de chamar Function (JS)
+            //Não se limita a Var, Você pode colocar Const e Let também
+            
+            var novoFunction = function(nome){
+                if(nome == 'Thiago'){
+                    return 'Seu nome é Thiago';
+                }else{
+                    return 'Não sei qual o seu nome';
+                }
+            }
+            console.log(novoFunction('Thiago'))
+
+        </script>
+    </body>
+</html>
